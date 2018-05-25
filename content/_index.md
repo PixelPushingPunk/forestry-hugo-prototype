@@ -1,6 +1,6 @@
 ---
 title: Digital Forest
-description: The future is here.
+description: The future is here. Really?
 type: page
 
 ---
