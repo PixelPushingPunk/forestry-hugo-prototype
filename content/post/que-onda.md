@@ -1,16 +1,16 @@
 ---
 title: Hello World!
-date: '2018-05-23T13:09:26-03:00'
-draft: false
+date: 2018-05-23 13:09:26 -0300
 categories:
-  - test
+- test
 tags:
-  - test
-  - hello-world
+- test
+- hello-world
 autoThumbnailImage: true
 thumbnailImagePosition: left
-thumbnailImage: /images/uploads/cover.jpg
-coverImage: /images/uploads/cover.jpg
+thumbnailImage: "/images/uploads/cover.jpg"
+coverImage: "/images/uploads/cover.jpg"
+
 ---
 This is another test.
 
