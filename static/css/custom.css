@@ -1,0 +1,100 @@
+/* 
+  Custom css for prototype
+  fine to use `!important`
+  as will remove these styles
+  later.
+*/
+
+/* Fonts */
+@font-face {
+  font-family: 'feijoa';
+  src: url("../fonts/feijoa-display.eot?srf3rx");
+  src: url("../fonts/feijoa-display.eot?srf3rx#iefix") format("embedded-opentype"), url("../fonts/feijoa-display.ttf?srf3rx") format("truetype"), url("../fonts/feijoa-display.woff?srf3rx") format("woff"), url("../fonts/feijoa-display.svg?srf3rx#feijoa-display") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'feijoa';
+  src: url("../fonts/feijoa-bold.eot?srf3rx");
+  src: url("../fonts/feijoa-bold.eot?srf3rx#iefix") format("embedded-opentype"), url("../fonts/feijoa-bold.ttf?srf3rx") format("truetype"), url("../fonts/feijoa-bold.woff?srf3rx") format("woff"), url("../fonts/feijoa-bold.svg?srf3rx#feijoa-bold") format("svg");
+  font-weight: normal;
+  font-style: bold;
+}
+
+/* Dummy Body Font */
+.body-font {
+  font-family: avenir next,avenir,sans-serif !important;
+}
+
+/* Dummy Body Colors */
+.theorem-normal-color {
+  color: #292F33 !important;
+}
+
+.theorem-green-color {
+  color: #3BD1CC !important;
+}
+
+.theorem-blue-color {
+  color: #1E85D4 !important;
+}
+
+.theorem-purple-color {
+  color: #AF4ED4 !important;
+}
+
+.theorem-normal-bg {
+  background-color: #292F33 !important;
+}
+
+.theorem-green-bg {
+  background-color: #3BD1CC !important;
+}
+
+.theorem-blue-bg {
+  background-color: #1E85D4 !important;
+}
+
+.theorem-purple-bg {
+  background-color: #AF4ED4 !important;
+}
+
+.theorem-near-black-bg {
+  background-color: #292F33 !important;
+}
+
+/* Dummy ReBase */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "feijoa" !important;
+  color: #292F33 !important;
+}
+
+body {
+  font-family: avenir next,avenir,sans-serif !important;
+  color: #292F33 !important;
+}
+
+nav {
+  z-index: 999;
+}
+
+/* Custom gallery carousel styles for now */
+.gallery-carousel-wrapper {
+  width: 100%;
+  position: relative;
+  padding: 0 4em;
+}
+
+.gallery-carousel img{
+  width: 100%;
+}
+
+.gallery-carousel-wrapper .buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.gallery-carousel-wrapper .buttons button {
+  margin-left: 20px;
+}

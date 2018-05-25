@@ -1,0 +1,168 @@
+backend:
+  name: git-gateway
+  repo: citrusbyte/digital-forest-prototype
+  branch: netlify-hugo-prototype
+publish_mode: editorial_workflow
+media_folder: "static/images/uploads"
+public_folder: "/images/uploads"
+collections:
+  - name: "our-theorem"
+    label: "Our Theorem"
+    folder: "content/our-theorem"
+    slug: "{{slug}}"
+    fields:
+      - label: "Title"
+        name: "title"
+        widget: "string"
+      - label: "Description"
+        name: "description"
+        required: false
+        widget: "string"
+      - label: "Body"
+        name: "body"
+        required: false
+        widget: "markdown"
+
+  - name: "about"
+    label: "About us"
+    folder: "content/about"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - label: "Name"
+        name: "title"
+        widget: "string"
+      - label: "Description"
+        name: "description"
+        required: false
+        widget: "string"
+      - label: "Picture"
+        name: "picture"
+        required: false
+        widget: "image"
+      - label: "Linkedin"
+        name: "linkedin"
+        widget: "string"
+        required: false
+      - label: "Github"
+        name: "github"
+        widget: "string"
+        required: false
+      - label: "Facebook"
+        name: "facebook"
+        widget: "string"
+        required: false
+      - label: "Dribbble"
+        name: "dribbble"
+        widget: "string"
+        required: false
+      - label: "Twitter"
+        name: "twitter"
+        widget: "string"
+        required: false
+      - label: "Bio"
+        name: "body"
+        widget: "markdown"
+      - label: "Publish Date"
+        name: "date"
+        required: false
+        widget: "datetime"
+
+  - name: "posts" # Used in routes, e.g., /admin/collections/blog
+    label: "Post" # Used in the UI
+    folder: "content/post" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+
+      - label: "Title"
+        name: "title"
+        widget: "string"
+
+      - label: "Publish Date"
+        name: "date"
+        required: false
+        widget: "datetime"
+
+      - label: "Draft"
+        name: "draft"
+        required: false
+        widget: "boolean"
+        default: true
+
+      - label: "Categories"
+        name: "categories"
+        required: false
+        widget: "list"
+
+      - label: "Tags"
+        name: "tags"
+        required: false
+        widget: "list"
+
+      - label: "Keywords"
+        name: "keywords"
+        required: false
+        widget: "list"
+
+      - label: "Auto Thumbnail Image"
+        name: "autoThumbnailImage"
+        required: false
+        widget: "boolean"
+        default: true
+
+      - label: "Thumbnail Image Position"
+        name: "thumbnailImagePosition"
+        required: false
+        widget: "select"
+        options: ["left", "top", "right"]
+
+      - label: "Thumbnail Image"
+        name: "thumbnailImage"
+        required: false
+        widget: "image"
+
+      - label: "Cover Image"
+        name: "coverImage"
+        required: false
+        widget: "image"
+
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
+
+  - name: "contact"
+    label: "Contact us"
+    folder: "content/contact"
+    create: true
+    fields:
+      - label: "Title"
+        name: "title"
+        widget: "string"
+
+      - label: "Description"
+        name: "description"
+        widget: "text"
+      
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
+  
+  - name: "our-approach"
+    label: "What We Do"
+    folder: "content/our-approach"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - label: "Title"
+        name: "title"
+        widget: "string"
+
+      - label: "Body"
+        name: "body"
+        required: false
+        widget: "markdown"
+
+      - label: "Gallery Image"
+        name: "image"
+        widget: "image"

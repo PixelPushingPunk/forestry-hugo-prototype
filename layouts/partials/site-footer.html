@@ -1,0 +1,23 @@
+<footer class="theorem-near-black-bg ph4-m ph5-l  bottom-0 w-100 pa3 ph3 white" role="contentinfo">
+  <div class="flex justify-between">
+  <h5>
+    <a href="{{ .Site.BaseURL }}" class="f3 fw2 hover-moon-gray no-underline white dib">
+      {{ .Site.Title }}
+    </a>
+  </h5>
+  <div class="flex-l items-center">
+      {{ if .Site.Menus.main }}
+        <ul class="pl0 mr3">
+          {{ range .Site.Menus.main }}
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-moon-gray no-underline white" href="{{ .URL }}" title="{{ .Name }} page">
+              {{ .Name }}
+            </a>
+          </li>
+          {{ end }}
+        </ul>
+      {{ end }}
+      {{ partial "social-follow.html" . }}
+    </div>
+  </div>
+</footer>

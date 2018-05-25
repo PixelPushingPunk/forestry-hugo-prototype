@@ -1,0 +1,25 @@
+baseURL: https://mystifying-mahavira-edbcc1.netlify.com/
+footnoteReturnLinkContents: ↩
+theme: gohugo-theme-ananke
+MetaDataFormat: "yaml"
+DefaultContentLanguage: "en"
+SectionPagesMenu: "main"
+enableRobotsTXT: true
+
+params:
+  Subtitle: Digital Forest rules!
+  description: The future is here.
+  facebook: "#"
+  twitter: "https://twitter.com/citrusbyte"
+  background_color_class: "bg-white"
+  featured_image: "/images/theorem_hero.png"
+  recent_posts_number: 3
+  custom_css:
+    - css/custom.css
+  custom_js:
+    - js/01_siema.min.js
+    - js/02_custom.js
+
+permalinks:
+  post: /:year/:month/:title/
+title: Digital Forest
