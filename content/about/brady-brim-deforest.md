@@ -3,9 +3,10 @@ title: Brady Brim-DeForest
 description: CEO
 autoThumbnailImage: true
 thumbnailImagePosition: left
-thumbnailImage: /images/uploads/brady-brim-deforest.jpg
-coverImage: /images/uploads/brady-brim-deforest.jpg
-image: /images/uploads/brady-brim-deforest.jpg
+thumbnailImage: "/images/uploads/brady-brim-deforest.jpg"
+coverImage: "/images/uploads/brady-brim-deforest.jpg"
+image: "/images/uploads/brady-brim-deforest.jpg"
+
 ---
 <div class="about-us-profile flex">
 

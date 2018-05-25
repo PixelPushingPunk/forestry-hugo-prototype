@@ -1,6 +1,6 @@
 ---
 title: Shutter
 description: Description
-image: /images/uploads/shutter.png
----
+image: "/images/uploads/shutter.png"
 
+---
